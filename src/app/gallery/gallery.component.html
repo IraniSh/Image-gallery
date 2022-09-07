@@ -1,0 +1,15 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <mat-list fxFlex>
+    <mat-list-item *ngFor="let place of places">
+      <img matListAvatar src={{place.image}} alt={{place.name}}>
+      <h1 matLine> {{place.name}} </h1>
+      <p matLine>
+        <span> {{place.description}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+
+</div>
